@@ -3,173 +3,202 @@ drivers:
   results:
   - 10
   - 13
-  cost: 7.3
+  - 5
+  cost: 7.2
 
 - name: Alonso
   results:
   - 9
   - -3
-  cost: 12.3
+  - -5
+  cost: 12.5
 
 - name: Bottas
   results:
   - 22
   - -2
-  cost: 9.5
+  - 20
+  cost: 9.4
 
 - name: Gasly
   results:
   - -4
   - 17
-  cost: 13.3
+  - 14
+  cost: 13.1
 
 - name: Hamilton
   results:
   - 34
   - 13
-  cost: 30.7
+  - 26
+  cost: 30.4
 
 - name: Latifi
   results:
   - 10
   - -9
-  cost: 6.8
+  - 8
+  cost: 6.7
 
 - name: Leclerc
   results:
   - 49
   - 41
-  cost: 18.6
+  - 49
+  cost: 18.8
 
 - name: Magnussen
   results:
   - 27
   - 14
+  - 6
   cost: 6
 
 - name: Norris
   results:
   - 1
   - 22
-  cost: 15.5
+  - 24
+  cost: 15.8
 
 - name: Ocon
   results:
   - 20
   - 21
-  cost: 12.4
+  - 20
+  cost: 12.6
 
 - name: Perez
   results:
   - 4
   - 22
-  cost: 17.7
+  - 35
+  cost: 18
 
 - name: Ricciardo
   results:
   - 13
   - -8
-  cost: 13.8
+  - 18
+  cost: 14
 
 - name: Russel
   results:
   - 28
   - 26
-  cost: 23.7
+  - 33
+  cost: 23.8
 
 - name: Sainz
   results:
   - 32
   - 27
+  - -5
   cost: 17.3
 
 - name: Schumacher
   results:
   - 5
   - 2
-  cost: 6.4
+  - 12
+  cost: 6.3
 
 - name: Stroll
   results:
   - 15
   - 9
-  cost: 9.1
+  - 9
+  cost: 9
 
 - name: Tsunoda
   results:
   - 19
   - -15
-  cost: 8.5
+  - -1
+  cost: 8.4
 
 - name: Verstappen
   results:
   - 5
   - 45
+  - 4
   cost: 30.4
 
 - name: Zhou
   results:
   - 14
   - 10
-  cost: 8.2
+  - 9
+  cost: 8.5
 
 teams:
 - name: Alfa Romeo
   results:
   - 31
   - 3
-  cost: 8.5
+  - 24
+  cost: 8.4
 
 - name: AlphaTauri
   results:
   - 10
   - -3
-  cost: 10.3
+  - 8
+  cost: 10.2
 
 - name: Alpine
   results:
   - 24
   - 13
-  cost: 13.9
+  - 10
+  cost: 14.1
 
 - name: Aston Martin
   results:
   - 14
   - 19
-  cost: 11.2
+  - -3
+  cost: 11
 
 - name: Ferrari
   results:
   - 76
   - 63
-  cost: 25.7
+  - 44
+  cost: 25.8
 
 - name: Haas
   results:
   - 27
   - 11
-  cost: 6.2
+  - 13
+  cost: 6.6
 
 - name: McLaren
   results:
   - 9
   - 9
-  cost: 17.7
+  - 37
+  cost: 17.5
 
 - name: Mercedes
   results:
   - 57
   - 34
-  cost: 34.1
+  - 64
+  cost: 33.9
 
 - name: Red Bull
   results:
   - 4
   - 62
-  cost: 32.4
+  - 39
+  cost: 32.1
 
 - name: Williams
   results:
   - 15
   - 1
-  cost: 6.8
+  - 8
+  cost: 6.6
