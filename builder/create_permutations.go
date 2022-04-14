@@ -7,6 +7,7 @@ import (
 	"strings"
 )
 
+// creates all possible permutations of 5 drivers + 1 team that are below a set budget
 func CreatePermutations(data models.Data, budget float64) []models.FantasyTeam {
 	permutations := []models.FantasyTeam{}
 	numDrivers := len(data.Drivers)
@@ -37,7 +38,7 @@ func CreatePermutations(data models.Data, budget float64) []models.FantasyTeam {
 						}}
 						for _, t := range data.Teams {
 							team.Team = t
-							if team.GetTeamCost() < budget {
+							if team.GetTeamPrice() < budget {
 								permutations = append(permutations, team)
 							}
 						}

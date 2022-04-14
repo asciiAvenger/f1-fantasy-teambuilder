@@ -43,5 +43,5 @@ func init() {
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.
 	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
-	rootCmd.PersistentFlags().StringVarP(&flagDataSrc, "data", "d", "data.yaml", "YAML-File to read data from")
+	// rootCmd.PersistentFlags().StringVarP(&flagDataSrc, "data", "d", "data.yaml", "YAML-File to read data from")
 }

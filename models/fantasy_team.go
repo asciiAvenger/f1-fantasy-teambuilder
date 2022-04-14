@@ -5,18 +5,18 @@ type FantasyTeam struct {
 	Team    Unit
 }
 
-func (f FantasyTeam) GetTeamPoints() float64 {
-	sum := f.Team.GetPoints()
+func (f FantasyTeam) GetTeamSeasonScore() float64 {
+	sum := f.Team.SeasonScore
 	for _, d := range f.Drivers {
-		sum += d.GetPoints()
+		sum += d.SeasonScore
 	}
 	return sum
 }
 
-func (f FantasyTeam) GetTeamCost() float64 {
-	sum := f.Team.Cost
+func (f FantasyTeam) GetTeamPrice() float64 {
+	sum := f.Team.Price
 	for _, d := range f.Drivers {
-		sum += d.Cost
+		sum += d.Price
 	}
 	return sum
 }
