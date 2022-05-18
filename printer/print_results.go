@@ -25,12 +25,6 @@ func PrintResults(results []models.FantasyTeam, topTeams int, budget float64) {
 		t.AppendSeparator()
 	}
 	t.Render()
-
-	// fmt.Printf("Top %d Fantasy Teams out of a total of %d possible teams:\n", topTeams, len(permutations))
-	// for i := 0; i < topTeams; i++ {
-	// 	fmt.Println(permutations[i])
-	// 	fmt.Printf("Team cost: %.2f - Total fantasy points: %.2f\n", permutations[i].GetTeamPrice(), permutations[i].GetTeamSeasonScore())
-	// }
 }
 
 func roundNum(num float64) float64 {
