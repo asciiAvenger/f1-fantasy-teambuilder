@@ -6,6 +6,7 @@ package cmd
 
 import (
 	"f1-fantasy-teambuilder/builder"
+	"f1-fantasy-teambuilder/printer"
 	"f1-fantasy-teambuilder/reader"
 
 	"github.com/spf13/cobra"
@@ -26,7 +27,8 @@ This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		data := reader.CollectData()
-		builder.BuildTeam(data, flagBudget, flagTopTeams)
+		results := builder.BuildTeam(data, flagBudget, flagTopTeams)
+		printer.PrintResults(results, flagTopTeams, flagBudget)
 	},
 }
 

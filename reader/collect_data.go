@@ -3,6 +3,7 @@ package reader
 import (
 	"encoding/json"
 	"f1-fantasy-teambuilder/models"
+	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -10,6 +11,8 @@ import (
 
 // collect the data from the f1-fantasy public (unauthenticated) api
 func CollectData() models.Data {
+	fmt.Println("Collecting Data...")
+
 	// make the GET request
 	// this includes drivers and teams
 	resp, err := http.Get("https://fantasy-api.formula1.com/f1/2022/players")
