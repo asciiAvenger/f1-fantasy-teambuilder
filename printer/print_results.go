@@ -10,7 +10,7 @@ import (
 )
 
 func PrintResults(results []models.FantasyTeam, topTeams int, budget float64) {
-	fmt.Printf("Displaying top %d teams out %d possible teams...\n", topTeams, len(results))
+	fmt.Printf("Displaying top %d teams out of %d possible teams...\n", topTeams, len(results))
 	t := table.NewWriter()
 	t.SetOutputMirror(os.Stdout)
 	t.AppendHeader(table.Row{"#", "name", "points", "price"})
