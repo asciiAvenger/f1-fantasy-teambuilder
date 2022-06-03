@@ -28,7 +28,7 @@ to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		data := reader.CollectData()
 		results := builder.BuildTeam(data, flagBudget, flagTopTeams)
-		printer.PrintResults(results, flagTopTeams, flagBudget)
+		printer.PrintBuildResults(results, flagTopTeams, flagBudget)
 	},
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/jedib0t/go-pretty/v6/table"
 )
 
-func PrintResults(results []models.FantasyTeam, topTeams int, budget float64) {
+func PrintBuildResults(results []models.FantasyTeam, topTeams int, budget float64) {
 	fmt.Printf("Displaying top %d teams out of %d possible teams...\n", topTeams, len(results))
 	t := table.NewWriter()
 	t.SetOutputMirror(os.Stdout)
