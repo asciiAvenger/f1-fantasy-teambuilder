@@ -9,11 +9,16 @@ import (
 	"github.com/jedib0t/go-pretty/v6/table"
 )
 
-func PrintBuildResults(results []models.FantasyTeam, topTeams int, budget float64) {
-	fmt.Printf("Displaying top %d teams out of %d possible teams...\n", topTeams, len(results))
+func setupTable() table.Writer {
 	t := table.NewWriter()
 	t.SetOutputMirror(os.Stdout)
 	t.AppendHeader(table.Row{"#", "name", "points", "price"})
+	return t
+}
+
+func PrintBuildResults(results []models.FantasyTeam, topTeams int, budget float64) {
+	fmt.Printf("Displaying top %d teams out of %d possible teams...\n", topTeams, len(results))
+	t := setupTable()
 	for i := 0; i < topTeams; i++ {
 		t.AppendRow(table.Row{i + 1, results[i].Team.FirstName, results[i].Team.SeasonScore, results[i].Team.Price})
 		var drivers []table.Row
@@ -25,6 +30,22 @@ func PrintBuildResults(results []models.FantasyTeam, topTeams int, budget float6
 		t.AppendSeparator()
 	}
 	t.Render()
+}
+
+func PrintRankResults(results []models.Unit) {
+	t := setupTable()
+	for i, unit := range results {
+		t.AppendRow(table.Row{i + 1, formatUnitName(unit), roundNum(unit.SeasonScore), roundNum(unit.Price)})
+	}
+	t.Render()
+}
+
+func formatUnitName(unit models.Unit) string {
+	if len(unit.LastName) > 0 {
+		return fmt.Sprintf("%s %s", unit.FirstName, unit.LastName)
+	} else {
+		return unit.FirstName
+	}
 }
 
 func roundNum(num float64) float64 {
